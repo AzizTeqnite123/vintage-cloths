@@ -41,7 +41,8 @@
     color: #000;
 }
 
-.h2 {
+.h2,
+.innBanRow h1 {
     font-size: 80px;
     line-height: 80px;
     letter-spacing: 0px;
@@ -103,6 +104,11 @@ label {
     transition: all 0.3s ease, transform 0.3s ease;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
 
 .mainBtn :is(a, button)::before {
@@ -393,6 +399,7 @@ label {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
 }
 
 .imgWithCntMain .container {
@@ -765,6 +772,11 @@ label {
     width: 145px;
 }
 
+.footLogoImg a {
+    display: block;
+    width: 100%;
+}
+
 .footLogoImg img {
     width: 100%;
     height: 100%;
@@ -1040,3 +1052,176 @@ label {
 }
 
 /* STEP BOX SECTION CSS END */
+
+/* INNER BANNER CSS START */
+
+.innerBanner {
+    padding: 208px 0 80px 0;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.innBanRow .h1 {
+    text-align: center;
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: -5px 5px 0px #000;
+}
+
+/* INNER BANNER CSS END */
+
+/* BACKGROUND SECTION SIMPLE CSS START */
+
+.backgroundSecSimple {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* BACKGROUND SECTION SIMPLE CSS END */
+
+
+/* FAQ MAIN SECTION START */
+
+.faqMain {
+    padding: 120px 0;
+    background: #f4f4f4;
+    position: relative;
+}
+
+.faqMain::after {
+    content: "";
+    background-image: url(../images/section-after-before-layer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 276px;
+    height: 396px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.faqMainRow {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faqMainRow .accordion-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 39px 30px 33px;
+    background: #fff;
+}
+
+.faqMainRow .accordion-item-header {
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.faqMainRow .accordion-item-header::after {
+    content: "";
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    background-image: url(../images/faq-open.svg);
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 14px !important;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+    border: 1px solid #D24344;
+}
+
+.faqMainRow .accordion-item-header.active::after {
+    content: "";
+    background-image: url(../images/faq-close.svg);
+    transform: translateY(-50%) rotate(180deg);
+    background-color: #D24344;
+}
+
+.faqMainRow .accordion-item-header h5 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.faqMainRow .acc-item-head {
+    max-width: 96%;
+    padding-right: 15px;
+}
+
+.faqMainRow .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faqMainRow .accordion-item-body-content {
+    padding-top: 13px;
+    max-width: 838px;
+}
+
+.faqMainRow .accordion-item-body-content p {
+    font-family: D-DIN-PRO;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 10px;
+}
+
+.faqMainRow .accordion-item-body-content p:not(:first-child) {
+    margin-top: 10px;
+}
+
+.faqMainRow .accordion-item:has(.active) .accordion-item-body {
+    max-height: max-content;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* FAQ MAIN SECTION END */
+
+/* CONTACT MAIN SECTION START */
+
+.contactMain {
+    padding: 120px 0;
+    background: #f4f4f4;
+    position: relative;
+}
+
+.contactMain::after {
+    content: "";
+    background-image: url(../images/section-after-before-layer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 276px;
+    height: 396px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contactMain .headingHldr .h2 {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.contMainRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* CONTACT MAIN SECTION END */
