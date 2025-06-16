@@ -166,7 +166,7 @@ button {
 .bannerContent .topHeading {
     color: #CBA55A;
     text-shadow: -2px 2px 0px #000000;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 0.2px #000;
 }
 
 .bannerContent .h1 {
@@ -203,6 +203,7 @@ button {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: bottom center;
 }
 
 /* DETAIL BANNER CSS END */
@@ -239,6 +240,40 @@ button {
 .prodCardSec .headingHldr .h2 {
     -webkit-text-stroke: 1px #d5af65;
     text-shadow: -3px 3px 0px #d5af65;
+}
+
+.prodCardSec .swiper {
+    position: unset;
+}
+
+.prodCardSec .swiper:not(:has(.swiper-slide:nth-child(4))) .swiper-button-next {
+    display: none;
+}
+
+.prodCardSec .swiper:not(:has(.swiper-slide:nth-child(4))) .swiper-button-prev {
+    display: none;
+}
+
+.prodCardSec .swiper :is(.swiper-button-next, .swiper-button-prev) {
+    height: 40px;
+    width: 40px;
+    background: #D24344;
+    border: 1px solid #D24344;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.prodCardSec .swiper :is(.swiper-button-next, .swiper-button-prev)::after {
+    font-size: 16px;
+    color: #fff;
+}
+
+.prodCardSec .swiper :is(.swiper-button-next) {
+    right: 5px;
+}
+
+.prodCardSec .swiper :is(.swiper-button-prev) {
+    left: 5px;
 }
 
 .product-card-wrapper {
@@ -479,6 +514,26 @@ button {
 
 .newArrivalMain .swiper .swiper-wrapper .swiper-slide {
     width: 100%;
+    opacity: 0;
+    transition: all ease .3s;
+    transform: scale(1.2);
+}
+
+.newArrivalMain .swiper .swiper-wrapper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.newArrivalImg {
+    width: 100%;
+    height: 380px;
+}
+
+.newArrivalImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .autoplayProgrshldr {
@@ -524,11 +579,11 @@ button {
 }
 
 .testimonialMain .swiper .swiper-button-next {
-    right: 20px;
+    right: 0px;
 }
 
 .testimonialMain .swiper .swiper-button-prev {
-    left: 20px;
+    left: 0px;
 }
 
 .testimonialMain .swiper :is(.swiper-button-prev, .swiper-button-next) {
@@ -571,7 +626,7 @@ button {
     flex-direction: column;
     gap: 60px;
     align-items: center;
-    max-width: 880px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
@@ -705,6 +760,7 @@ button {
     font-family: SCHABO;
     font-weight: 400;
     font-size: 22px;
+    line-height: 1;
     text-transform: uppercase;
     color: #333333;
     margin-top: 10px;
@@ -855,6 +911,7 @@ button {
     font-family: D-DIN-PRO;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1;
     color: #fff;
     text-transform: capitalize;
 }
@@ -1218,10 +1275,98 @@ button {
     line-height: 60px;
 }
 
-.contMainRow {
+.contMainTopRow {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactForm .mainBtn {
+    margin-top: 0px !important;
+    width: 100%;
+}
+
+.field input,
+.field textarea {
+    padding: 10px 20px;
+    height: 52px;
+    background: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.field textarea {
+    height: 167px;
+}
+
+.field input,
+.field input::placeholder,
+.field textarea,
+.field textarea::placeholder {
+    font-family: D-DIN-PRO;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #43413d;
+}
+
+.contactForm .mainBtn :is(a, button) {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.contMainImg {
+    height: 100%;
+    display: block;
+    width: 100%;
+    max-height: 467px;
+}
+
+.contMainImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contMainBtmRow {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cntIconBox {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.cntIconBox img {
+    min-width: 32px;
+    width: 32px;
+    object-fit: contain;
+}
+
+.cntIconBox a {
+    font-family: D-DIN-PRO;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    color: #000;
+    max-width: 224px;
 }
 
 /* CONTACT MAIN SECTION END */

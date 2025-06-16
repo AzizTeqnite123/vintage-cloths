@@ -2,10 +2,28 @@ document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".prodCardSlider", {
         slidesPerView: 3,
         spaceBetween: 30,
-        pagination: {
-            el: ".prodCardSlider .swiper-pagination",
-            clickable: true,
+         navigation: {
+            nextEl: ".prodCardSlider .swiper-button-next",
+            prevEl: ".prodCardSlider .swiper-button-prev",
         },
+        breakpoints: {
+            280: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+             576: {
+                slidesPerView: 2.5,
+                spaceBetween: 15,
+            },
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1025: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }
     });
 });
 
@@ -20,15 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
-
-// var swiper = new Swiper(".newArrivalSlider", {
-//     slidesPerView: 1,
-//     spaceBetween: 30, loop: true,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
     const progressContainer = document.querySelector(".autoplayProgrshldr");

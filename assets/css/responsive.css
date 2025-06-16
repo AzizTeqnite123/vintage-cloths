@@ -1,0 +1,784 @@
+@media only screen and (max-width : 1024px) {
+
+    /* GLOBAL STYLING */
+
+    .h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .h2,
+    .innBanRow h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .mainBtn :is(a, button) {
+        padding: 14px 22px 10px;
+        font-size: 28px;
+    }
+
+    .mainBtn {
+        margin-top: 30px;
+    }
+
+    /* GLOBAL STYLING */
+
+    /* HOME PAGE STYLING 1024 START */
+
+    .mainBanner {
+        padding-top: 210px;
+        padding-bottom: 150px;
+    }
+
+    .topHeading {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .bannerContent .h1 {
+        margin-top: 15px;
+    }
+
+    .bannerContent .mainBtn {
+        margin-top: 40px;
+    }
+
+    .detBanImg {
+        height: 120px;
+    }
+
+    .prodCardSec {
+        padding: 60px 0;
+    }
+
+    .headingHldr {
+        margin-bottom: 30px;
+    }
+
+    .product-card-wrapper .card__inner {
+        height: 330px;
+    }
+
+    .product-card-wrapper .card__content .card__information .prodCardBtn {
+        height: 30px;
+        width: 30px;
+    }
+
+    .product-card-wrapper .card__content .card__information .prodCardBtn a {
+        padding: 7px;
+    }
+
+    .product-card-wrapper .card__content .card__information .colorSwatch {
+        margin-top: 10px;
+    }
+
+    .product-card-wrapper .card__content .card__information .price .price__container .price-item {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .imageWithCntMainRow {
+        gap: 30px;
+    }
+
+    .imgWithCntMainCont .h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .imgWithCntMainImg {
+        height: 550px;
+    }
+
+    .newArrivalMain {
+        padding: 60px 0;
+    }
+
+    .newArrivalMain .container .mainBtn,
+    .autoplayProgrshldr {
+        margin-top: 40px;
+    }
+
+    .newArrivalImg {
+        height: 350px;
+    }
+
+    .newArrivalMain .swiper {
+        max-width: 350px;
+    }
+
+    .stepBoxMain {
+        padding: 80px 0;
+    }
+
+    .stepBoxRow {
+        gap: 20px;
+    }
+
+    .stepBoxMainHldr {
+        padding: 25px 20px;
+    }
+
+    .stepBoxCnt h3 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .stepBoxCnt p {
+        margin-top: 15px;
+    }
+
+    .imgWithCntMain::after,
+    .stepBoxMain::before {
+        width: 200px;
+        height: 300px;
+    }
+
+    .stepBoxMain::before {
+        bottom: -20px;
+    }
+
+    .testimonialMain {
+        padding: 80px 0;
+    }
+
+    .testiBoxTop p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .testiBox {
+        max-width: 750px;
+        gap: 40px;
+    }
+
+    .testimonialMain .swiper :is(.swiper-button-prev, .swiper-button-next) {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .testiBtmLeft {
+        height: 60px;
+        width: 60px;
+        min-width: 60px;
+    }
+
+    .testiBtmRigt h5 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .testiBtmRigt p {
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 5px;
+    }
+
+    .ourBlogMain {
+        padding: 80px 0;
+    }
+
+    .blogMainRow {
+        gap: 20px;
+    }
+
+    .article-card-wrapper .card__inner {
+        height: 300px;
+    }
+
+    .article-card-wrapper .card__content {
+        margin-top: 15px;
+    }
+
+    .article-card-wrapper .card__content .card__heading {
+        font-size: 20px;
+    }
+
+    .mainFootTop {
+        padding: 60px 0;
+    }
+
+    .footLogoImg {
+        width: 120px;
+    }
+
+    .footSocialLinks {
+        margin-top: 20px;
+    }
+
+    .footLinksHldr h3,
+    .footNewsletterHldr h3 {
+        font-size: 20px;
+    }
+
+    .mainFootTopRow {
+        grid-template-columns: 22% 15% 15% 19% 24%;
+        gap: 10px;
+    }
+
+    .footerLinks {
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .footerNewsLetter {
+        margin-top: 15px;
+    }
+
+    .footerLinks li a {
+        font-size: 14px;
+    }
+
+    .mainFootBottom {
+        padding: 10px 0;
+    }
+
+    .testimonialMain .swiper :is(.swiper-button-prev, .swiper-button-next)::after {
+        font-size: 13px;
+    }
+
+    /* HOME PAGE STYLING 1024 END */
+}
+
+@media only screen and (max-width : 768px) {
+
+    /* GLOBAL STYLING */
+    .h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .bannerContent .mainBtn {
+        margin-top: 30px;
+    }
+
+    .h2,
+    .innBanRow h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .mainBtn :is(a, button) {
+        padding: 12px 20px 8px;
+        font-size: 24px;
+    }
+
+    /* GLOBAL STYLING */
+
+
+    /* HOME PAGE STYLING 768 START */
+
+    .mainBanner {
+        padding-top: 170px;
+        padding-bottom: 120px;
+    }
+
+    .topHeading {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .detBanImg {
+        height: 90px;
+    }
+
+    .prodCardSec {
+        padding: 50px 0;
+    }
+
+    .product-card-wrapper .card__inner {
+        height: 300px;
+    }
+
+    .imageWithCntMainRow {
+        gap: 20px;
+    }
+
+    .imgWithCntMain::after,
+    .stepBoxMain::before {
+        width: 150px;
+        height: 210px;
+    }
+
+    .imgWithCntMainCont .h2 {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .imgWithCntMainImg {
+        height: 430px;
+    }
+
+    .newArrivalMain {
+        padding: 50px 0;
+    }
+
+    .newArrivalMain {
+        padding: 50px 0;
+    }
+
+    .newArrivalMain {
+        padding: 50px 0;
+    }
+
+    .newArrivalMain {
+        padding: 50px 0;
+    }
+
+    .newArrivalMain .container .mainBtn,
+    .autoplayProgrshldr {
+        margin-top: 30px;
+    }
+
+    .autoplay-progress-bar {
+        width: 40px;
+    }
+
+    .stepBoxMain {
+        padding: 60px 0;
+    }
+
+    .stepBoxRow {
+        gap: 15px;
+    }
+
+    .stepBoxMainHldr {
+        padding: 20px 15px;
+    }
+
+    .stepBoxCnt h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .stepBoxCnt p {
+        margin-top: 12px;
+    }
+
+    .stepBoxCnt>.mainBtn {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .testimonialMain {
+        padding: 60px 0;
+    }
+
+    .testimonialMain {
+        padding: 60px 0;
+    }
+
+    .testiBoxTop p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .testiBox {
+        max-width: 600px;
+        gap: 30px;
+    }
+
+    .testiBtmLeft {
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .testiBoxBottom {
+        gap: 15px;
+    }
+
+    .testiBtmRigt h5 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .ourBlogMain {
+        padding: 60px 0;
+    }
+
+    .blogMainRow {
+        gap: 15px;
+    }
+
+    .article-card-wrapper .card__inner {
+        height: 250px;
+    }
+
+    .ourBlogMain {
+        padding: 50px 0;
+    }
+
+    .article-card-wrapper .card__content .card__heading {
+        font-size: 18px;
+    }
+
+    .mainFootTop {
+        padding: 50px 0;
+    }
+
+    .mainFootTopRow {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+    }
+
+    .footLogoHldr {
+        order: 1;
+    }
+
+    .footLinksHldr {
+        order: 3;
+    }
+
+    .footNewsletterHldr {
+        grid-column: span 2;
+        order: 2;
+        max-width: 350px;
+    }
+
+    .stepBoxMain::before {
+        bottom: 0px;
+    }
+
+    /* HOME PAGE STYLING 768 END */
+}
+
+@media only screen and (max-width : 575px) {
+
+    /* GLOBAL STYLING */
+    .h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .mainBtn {
+        margin-top: 20px;
+    }
+
+    .h2,
+    .innBanRow h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .mainBtn :is(a, button) {
+        padding: 12px 20px 8px;
+        font-size: 20px;
+        text-shadow: -1.5px 1.5px 0px #000000;
+    }
+
+    :is(.container, .page-width) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* GLOBAL STYLING */
+
+    /* HOME PAGE STYLING 575 START */
+
+    .mainBanner {
+        padding-top: 140px;
+        padding-bottom: 100px;
+    }
+
+    .topHeading {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .bannerContent .h1 {
+        margin-top: 10px;
+        text-shadow: -2px 2px 0px #000
+    }
+
+    .bannerContent .mainBtn {
+        margin-top: 20px;
+    }
+
+    .detBanImg {
+        height: 50px;
+    }
+
+    .prodCardSec {
+        padding: 40px 0;
+    }
+
+    .headingHldr {
+        margin-bottom: 20px;
+    }
+
+    .prodCardSec .headingHldr .h2 {
+        -webkit-text-stroke: 0.8px #d5af65;
+        text-shadow: -1px 1px 0px #d5af65;
+    }
+
+    .product-card-wrapper .card__inner {
+        height: 250px;
+    }
+
+    .product-card-wrapper .card__inner {
+        height: 250px;
+    }
+
+    .product-card-wrapper .card__content .card__information .card__heading {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .product-card-wrapper .card__content .card__information .prodCardBtn {
+        height: 25px;
+        width: 25px;
+    }
+
+    .product-card-wrapper .card__content .card__information .prodCardBtn a {
+        padding: 6px;
+    }
+
+    .product-card-wrapper .card__content .card__information .price .price__container .price-item {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .product-card-wrapper .card__content .card__information .colorSwatch {
+        margin-top: 5px;
+    }
+
+    .imageWithCntMainRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    .imgWithCntMain .container {
+        padding-right: 0;
+    }
+
+    .imgWithCntMainImg {
+        height: 300px;
+    }
+
+    .imgWithCntMainCont {
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 40px;
+    }
+
+    .imgWithCntMain::after {
+        bottom: 0px;
+        top: unset;
+        left: 0;
+        right: unset;
+        transform: rotate(180deg);
+    }
+
+    .imgWithCntMain::after,
+    .stepBoxMain::before {
+        width: 100px;
+        height: 145px;
+    }
+
+    .imgWithCntMainCont .h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-text-stroke: 1px #000;
+        text-shadow: -1px 2px 0px #000
+    }
+
+    .imgWithCntMainCont p {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 320px;
+        padding-right: 3px;
+    }
+
+    .newArrivalMain .swiper {
+        max-width: 300px;
+    }
+
+    .newArrivalImg {
+        height: 280px;
+    }
+
+    .newArrivalMain .container .mainBtn,
+    .autoplayProgrshldr {
+        margin-top: 20px;
+    }
+
+    .newArrivalMain .container .mainBtn,
+    .autoplayProgrshldr {
+        margin-top: 20px;
+    }
+
+    .autoplayProgrshldr {
+        gap: 7px;
+    }
+
+    .newArrivalMain .headingHldr .h2 {
+        -webkit-text-stroke: 1px #000;
+        text-shadow: -2px 2px 0px #000;
+    }
+
+    .stepBoxMain {
+        padding: 40px 0;
+    }
+
+    .stepBoxRow {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stepBoxMain .h2 {
+        -webkit-text-stroke: 1px #000000;
+        text-shadow: -1.5px 1.5px 0px #000000;
+    }
+
+    .headingHldr .topHeading {
+        margin-bottom: 15px;
+    }
+
+    .stepBoxCnt h3 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .stepBoxCnt p {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .stepBoxCnt>.mainBtn a {
+        font-size: 14px;
+        text-shadow: -0.5px 0.5px 0px #000000;
+    }
+
+    .testimonialMain {
+        padding: 40px 0;
+    }
+
+    .testimonialMain .headingHldr .h2 {
+        -webkit-text-stroke: 1px #FFD4A1;
+        text-shadow: -1.5px 1.5px 0px #d5af65;
+    }
+
+    .testiBox {
+        max-width: 600px;
+        gap: 20px;
+    }
+
+    .testiBoxTop p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .testiBox {
+        max-width: 280px;
+    }
+
+    .testimonialMain .swiper :is(.swiper-button-prev, .swiper-button-next) {
+        top: 45%;
+        height: 25px;
+        width: 25px;
+    }
+
+    .testimonialMain .swiper :is(.swiper-button-prev, .swiper-button-next)::after {
+        font-size: 10px;
+    }
+
+    .testiBtmLeft {
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+        border-width: 1px;
+    }
+
+    .testiBtmRigt h5 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .testiBtmRigt p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 5px;
+    }
+
+    .ourBlogMain {
+        padding: 40px 0;
+    }
+
+    .blogMainRow {
+        gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .article-card-wrapper .card__content .card__heading {
+        font-size: 16px;
+    }
+
+    .stepBoxCnt>.mainBtn {
+        gap: 10px;
+    }
+
+    .article-card-wrapper .card__content .article-card__excerpt p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .mainFootTop {
+        padding: 40px 0;
+    }
+
+    .mainFootTopRow {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 25px;
+    }
+
+    .footLinksHldr h3,
+    .footNewsletterHldr h3 {
+        font-size: 18px;
+    }
+
+    .footerNewsLetter {
+        margin-top: 10px;
+    }
+
+    .footNewsletterHldr {
+        grid-column: span 1;
+        max-width: 320px;
+    }
+
+    .footLogoImg {
+        width: 90px;
+    }
+
+    .footerLinks {
+        gap: 10px;
+    }
+
+    .footerLinks li a {
+        font-size: 13px;
+    }
+
+    .footerLinks li a br {
+        display: none;
+    }
+
+    .mainFootBtmRow p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .mainFootBottom {
+        padding: 8px 0;
+    }
+
+    .article-card-wrapper .card__content .article-card__info span {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    /* HOME PAGE STYLING 575 END */
+}
